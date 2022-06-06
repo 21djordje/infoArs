@@ -1354,6 +1354,13 @@ footer {
   .subscribe-input {
     flex: unset;
   }
+  .featured-tab-menu .nav-tabs {
+    justify-content: center;
+  }
+
+  .featured-tab-menu .nav-tabs .nav-link {
+    padding: 10px 5px;
+  }
 }
 
 @media (max-width: 420px) {
