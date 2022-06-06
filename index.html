@@ -1,0 +1,3054 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>infoArs</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css?v=1" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo2.svg" alt="infoArs" />
+        </a>
+
+        <label class="navbar-toggler" for="slide-menu-right" type="button">
+          <span> </span>
+          <span> </span>
+          <span> </span>
+        </label>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <div class="navbar-nav ms-auto align-items-center">
+            <ul id="menu-main" class="navbar-nav me-auto mb-2 mb-md-0">
+              <li><a href="inde.html" class="active">Home</a></li>
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact-html">Contact Us</a></li>
+            </ul>
+
+            <div class="nav-btn">
+              <a
+                class="nav-link btn btn-main"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#signUpModal"
+                >Sign Up</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Menu Items -->
+    <div class="slide-menu">
+      <input id="slide-menu-right" class="menu-toggle" type="checkbox" />
+      <div class="menu-wrap">
+        <label for="slide-menu-right" class="menu-close">Close</label>
+        <div class="menu-list">
+          <ul id="menu-main" class="navbar-nav me-auto mb-5 text-center">
+            <li><a href="inde.html" class="active">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact-html">Contact Us</a></li>
+          </ul>
+          <div class="nav-btn text-center">
+            <a
+              class="nav-link btn btn-main"
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#signUpModal"
+              >Sign Up</a
+            >
+          </div>
+        </div>
+      </div>
+      <label for="slide-menu-right" class="menu-overlay"></label>
+    </div>
+
+    <!-- Hero Section -->
+
+    <section class="hero-section d-flex align-items-center">
+      <div class="container">
+        <div class="hero-content">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="hero-left">
+                <h6>Grow With Us</h6>
+                <h1>
+                  Discover 4500+ Courses
+                  <span class="d-inline d-md-block">from Top Instructors</span>
+                </h1>
+                <div class="hero-text">
+                  <p>
+                    Take your learning organization to the next level.Who will
+                    share their knowledge to people around the world.
+                  </p>
+                </div>
+                <div class="hero-input d-flex">
+                  <input
+                    type="search"
+                    id="SearchHeroForm"
+                    class="form-control"
+                    placeholder="What do you want to learn?"
+                  />
+
+                  <button type="button" class="btn">
+                    <img src="img/search.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+              <div class="hero-right text-center">
+                <div class="hero-img">
+                  <img src="img/girl.png" alt="" />
+                  <div class="hero-img-card-1">
+                    <div class="hero-card-icon mx-auto">
+                      <img src="img/hero-card-1.svg" alt="" />
+                    </div>
+                    <div class="hero-card-text">Top Rated Instructor</div>
+                  </div>
+                  <div class="hero-img-card-2 text-start">
+                    <div class="hero-img-card-2-top">
+                      <img src="img/people.svg" alt="" />
+                    </div>
+                    <div class="hero-img-card-2-bottom">
+                      More than <span>5000+</span> students are enrolled around
+                      the world.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Categories -->
+
+    <section class="top-categories-section">
+      <div class="container">
+        <div class="heading-wrap text-center">
+          <h2>
+            Explore
+            <span class="d-block">Our Top Categories</span>
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            <div
+              class="categories-block d-flex justify-content-between flex-wrap"
+            >
+              <a href="categories.html#development">
+                <div class="category-box d-flex flex-column align-items-center">
+                  <div class="category-icon">
+                    <img src="img/development.svg" alt="" />
+                  </div>
+                  <h5>Development</h5>
+                  <h6>3 Semester</h6>
+                </div>
+              </a>
+              <a href="categories.html#development">
+                <div class="category-box d-flex flex-column align-items-center">
+                  <div class="category-icon">
+                    <img src="img/graphic-design.svg" alt="" />
+                  </div>
+                  <h5>Web Design</h5>
+                  <h6>3 Semester</h6>
+                </div>
+              </a>
+              <a href="categories.html#development">
+                <div class="category-box d-flex flex-column align-items-center">
+                  <div class="category-icon">
+                    <img src="img/accounting.svg" alt="" />
+                  </div>
+                  <h5>Accounting</h5>
+                  <h6>3 Semester</h6>
+                </div>
+              </a>
+              <a href="categories.html#development">
+                <div class="category-box d-flex flex-column align-items-center">
+                  <div class="category-icon">
+                    <img src="img/photography.svg" alt="" />
+                  </div>
+                  <h5>Photography</h5>
+                  <h6>3 Semester</h6>
+                </div>
+              </a>
+              <a href="categories.html#development">
+                <div class="category-box d-flex flex-column align-items-center">
+                  <div class="category-icon">
+                    <img src="img/data-science.svg" alt="" />
+                  </div>
+                  <h5>Coding</h5>
+                  <h6>3 Semester</h6>
+                </div>
+              </a>
+              <a href="categories.html#development">
+                <div class="category-box d-flex flex-column align-items-center">
+                  <div class="category-icon">
+                    <img src="img/animation.svg" alt="" />
+                  </div>
+                  <h5>Animation</h5>
+                  <h6>3 Semester</h6>
+                </div>
+              </a>
+              <a href="categories.html#development">
+                <div class="category-box d-flex flex-column align-items-center">
+                  <div class="category-icon">
+                    <img src="img/marketing.svg" alt="" />
+                  </div>
+                  <h5>Digital Marketing</h5>
+                  <h6>3 Semester</h6>
+                </div>
+              </a>
+              <a href="categories.html#development">
+                <div class="category-box d-flex flex-column align-items-center">
+                  <div class="category-icon">
+                    <img src="img/uix.svg" alt="" />
+                  </div>
+                  <h5>UI/UX Design</h5>
+                  <h6>3 Semester</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="btn-wrap text-center">
+          <a href="categories.html" class="btn btn-main">View All Categories</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Most Featured -->
+
+    <section class="most-featured-section">
+      <div class="container">
+        <div
+          class="section-header d-lg-flex justify-content-between align-items-end"
+        >
+          <div class="heading-wrap">
+            <h2>
+              Discover
+              <span class="d-block">Most Featured Courses</span>
+            </h2>
+          </div>
+          <div class="featured-tab-menu">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a
+                  class="nav-link active"
+                  id="nav-view-all"
+                  data-bs-toggle="tab"
+                  href="#tab-view-all"
+                  role="tab"
+                  aria-controls="tab-view-all"
+                  aria-selected="true"
+                  >View All</a
+                >
+                <a
+                  class="nav-link"
+                  id="nav-data-science"
+                  data-bs-toggle="tab"
+                  href="#tab-data-science"
+                  role="tab"
+                  aria-controls="tab-data-science"
+                  aria-selected="false"
+                  >Data Science</a
+                >
+                <a
+                  class="nav-link"
+                  id="nav-business"
+                  data-bs-toggle="tab"
+                  href="#tab-business"
+                  role="tab"
+                  aria-controls="tab-business"
+                  aria-selected="false"
+                  >Business</a
+                >
+                <a
+                  class="nav-link"
+                  id="nav-python"
+                  data-bs-toggle="tab"
+                  href="#tab-python"
+                  role="tab"
+                  aria-controls="tab-python"
+                  aria-selected="false"
+                  >Python</a
+                >
+                <a
+                  class="nav-link"
+                  id="nav-animation"
+                  data-bs-toggle="tab"
+                  href="#tab-animation"
+                  role="tab"
+                  aria-controls="tab-animation"
+                  aria-selected="false"
+                  >Animation</a
+                >
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="tab-content" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="tab-view-all"
+            role="tabpanel"
+            aria-labelledby="tab-view-all"
+          >
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/laptop.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Business</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/course-image.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Coding</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/course-image.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Designing</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="tab-data-science"
+            role="tabpanel"
+            aria-labelledby="tab-data-science"
+          >
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/data-science.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Coding</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/course-image.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Coding</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/data-science.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Coding</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="tab-business"
+            role="tabpanel"
+            aria-labelledby="tab-business"
+          >
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/data-science.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Business</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/course-image.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Business</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/data-science.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Business</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="tab-python"
+            role="tabpanel"
+            aria-labelledby="tab-python"
+          >
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/coding.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Coding</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/coding.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Coding</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/coding.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Coding</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="tab-animation"
+            role="tabpanel"
+            aria-labelledby="tab-animation"
+          >
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/animation.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Animation</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/animation.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Animation</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/animation.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Animation</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+
+    <section class="stats-section">
+      <div class="stats-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-6">
+              <div class="stats-box text-center">
+                <div class="stats-number">
+                  <span class="counter-number">45</span>K+
+                </div>
+                <h6>Active Students</h6>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="stats-box text-center">
+                <div class="stats-number">
+                  <span class="counter-number">90</span>+
+                </div>
+                <h6>Faculty Courses</h6>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="stats-box text-center">
+                <div class="stats-number">
+                  <span class="counter-number">150</span>+
+                </div>
+                <h6>Top Lecturers</h6>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="stats-box text-center">
+                <div class="stats-number">
+                  <span class="counter-number">49</span>+
+                </div>
+                <h6>Awards Received</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Popular Courses -->
+
+    <section class="popular-courses-section">
+      <div class="container">
+        <h2 class="text-center">
+          Our Most <span class="d-block">Popular Courses</span>
+        </h2>
+        <div class="d-flex justify-content-end popular-tab-menu-wrapper">
+          <div class="popular-tab-menu">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a
+                  class="nav-link"
+                  id="nav-popular-economics"
+                  data-bs-toggle="tab"
+                  href="#popular-economics"
+                  role="tab"
+                  aria-controls="popular-economics"
+                  aria-selected="false"
+                  >Economics</a
+                >
+                <a
+                  class="nav-link"
+                  id="nav-popular-business"
+                  data-bs-toggle="tab"
+                  href="#popular-business"
+                  role="tab"
+                  aria-controls="popular-business"
+                  aria-selected="false"
+                  >Business</a
+                >
+                <a
+                  class="nav-link"
+                  id="nav-popular-digital"
+                  data-bs-toggle="tab"
+                  href="#popular-digital"
+                  role="tab"
+                  aria-controls="popular-digital"
+                  aria-selected="false"
+                  >Digital</a
+                >
+
+                <a
+                  class="nav-link"
+                  id="nav-popular-animation"
+                  data-bs-toggle="tab"
+                  href="#popular-animation"
+                  role="tab"
+                  aria-controls="popular-animation"
+                  aria-selected="false"
+                  >Animation</a
+                >
+                <a
+                  class="nav-link"
+                  id="nav-popular-python"
+                  data-bs-toggle="tab"
+                  href="#popular-python"
+                  role="tab"
+                  aria-controls="popular-python"
+                  aria-selected="false"
+                  >Python</a
+                >
+                <a
+                  class="nav-link active"
+                  id="nav-popular-all"
+                  data-bs-toggle="tab"
+                  href="#popular-all"
+                  role="tab"
+                  aria-controls="popular-all"
+                  aria-selected="true"
+                  >View All</a
+                >
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="tab-content" id="nav-popularCourses">
+          <div
+            class="tab-pane fade"
+            id="popular-economics"
+            role="tabpanel"
+            aria-labelledby="popular-economics"
+          >
+            <div class="row">
+              <div class="col-lg-4 cold-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/laptop.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Economics</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-lg-4 cold-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/laptop.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Economics</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 cold-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/laptop.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Economics</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 cold-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/laptop.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Economics</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 cold-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/course-image.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Economics</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 cold-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/course-image.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Economics</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="popular-business"
+            role="tabpanel"
+            aria-labelledby="tab-data-science"
+          >
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/data-science.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Business</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/data-science.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Business</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/data-science.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Business</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/data-science.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Business</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/course-image.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Business</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/data-science.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Business</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="popular-digital"
+            role="tabpanel"
+            aria-labelledby="popular-digital"
+          >
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/data-science.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Digital</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/course-image.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Digital</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/data-science.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Digital</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/data-science.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Digital</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/data-science.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Digital</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/data-science.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Digital</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business. Culture & Leadership: Strategies for a
+                      successful business. Culture & Leadership: Strategies for
+                      a successful business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="popular-python"
+            role="tabpanel"
+            aria-labelledby="popular-python"
+          >
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/coding.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Coding</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/coding.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Coding</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/coding.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Coding</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/coding.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Coding</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/coding.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Coding</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/coding.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Coding</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="popular-animation"
+            role="tabpanel"
+            aria-labelledby="popular-animation"
+          >
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/animation.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Animation</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/animation.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Animation</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/animation.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Animation</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/animation.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Animation</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/animation.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Animation</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/animation.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Animation</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade show active"
+            id="popular-all"
+            role="tabpanel"
+            aria-labelledby="popular-all"
+          >
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/animation.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Animation</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/animation.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Animation</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/data-science.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Business</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/data-science.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Business</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/data-science.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Business</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <a href="" class="course-link">
+                  <div class="course-card">
+                    <div class="course-image">
+                      <img src="img/animation.jpg" alt="" />
+                    </div>
+                    <div
+                      class="category-stars d-flex justify-content-between align-item"
+                    >
+                      <div class="card-category">Animation</div>
+                      <div class="card-review d-flex align-items-center">
+                        <div class="card-mark">4.9</div>
+                        <div class="card-stars">
+                          <img src="img/rating.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h5>
+                      Culture & Leadership: Strategies for a successful
+                      business.
+                    </h5>
+                    <div
+                      class="duration-lectures d-flex justify-content-between"
+                    >
+                      <div class="course-duration d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/clock.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">08 hr 15 min</div>
+                      </div>
+                      <div class="course-lectures d-flex align-items-center">
+                        <div class="icon-wrapper">
+                          <img src="img/lectures.svg" alt="" />
+                        </div>
+                        <div class="course-duration-text">29 Lectures</div>
+                      </div>
+                    </div>
+                    <div class="course-price"><h6>$33.00</h6></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Blog section -->
+
+    <section class="blog-section">
+      <div class="container">
+        <h2 class="text-center">
+          Discover <span class="d-block">More From Our Blog</span>
+        </h2>
+        <div class="blog-block">
+          <div class="row">
+            <div class="col-lg-4">
+              <a href="">
+                <div class="blog-box d-flex flex-column">
+                  <div class="blog-image">
+                    <img src="img/blog-post.jpg" alt="" />
+                  </div>
+                  <div class="blog-author">
+                    <span>Education /</span> By Lily James
+                  </div>
+                  <div class="blog-date-comments d-flex align-items-center">
+                    <div class="date-comments d-flex align-items-center">
+                      <div class="date-comm-img">
+                        <img src="img/calendar.svg" alt="" />
+                      </div>
+                      <div class="date-comm">9 Dec,2022</div>
+                    </div>
+                    <div class="date-comments d-flex align-items-center">
+                      <div class="date-comm-img">
+                        <img src="img/chat.svg" alt="" />
+                      </div>
+                      <div class="date-comm">02 Comments</div>
+                    </div>
+                  </div>
+                  <h5>
+                    Culture & Leadership:Strategies for a successful business.
+                  </h5>
+                  <div class="read-more">Read More</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <a href="">
+                <div class="blog-box d-flex flex-column">
+                  <div class="blog-image">
+                    <img src="img/blog-post.jpg" alt="" />
+                  </div>
+                  <div class="blog-author">
+                    <span>Education /</span> By Lily James
+                  </div>
+                  <div class="blog-date-comments d-flex align-items-center">
+                    <div class="date-comments d-flex align-items-center">
+                      <div class="date-comm-img">
+                        <img src="img/calendar.svg" alt="" />
+                      </div>
+                      <div class="date-comm">9 Dec,2022</div>
+                    </div>
+                    <div class="date-comments d-flex align-items-center">
+                      <div class="date-comm-img">
+                        <img src="img/chat.svg" alt="" />
+                      </div>
+                      <div class="date-comm">02 Comments</div>
+                    </div>
+                  </div>
+                  <h5>
+                    Culture & Leadership:Strategies for a successful business.
+                  </h5>
+                  <div class="read-more">Read More</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <a href="">
+                <div class="blog-box d-flex flex-column">
+                  <div class="blog-image">
+                    <img src="img/blog-post.jpg" alt="" />
+                  </div>
+                  <div class="blog-author">
+                    <span>Education /</span> By Lily James
+                  </div>
+                  <div class="blog-date-comments d-flex align-items-center">
+                    <div class="date-comments d-flex align-items-center">
+                      <div class="date-comm-img">
+                        <img src="img/calendar.svg" alt="" />
+                      </div>
+                      <div class="date-comm">9 Dec,2022</div>
+                    </div>
+                    <div class="date-comments d-flex align-items-center">
+                      <div class="date-comm-img">
+                        <img src="img/chat.svg" alt="" />
+                      </div>
+                      <div class="date-comm">02 Comments</div>
+                    </div>
+                  </div>
+                  <h5>
+                    Culture & Leadership:Strategies for a successful business.
+                  </h5>
+                  <div class="read-more">Read More</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="btn-wrap text-center">
+          <a href="blog.html" class="btn btn-main">View All</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+
+    <section class="testimonials-section">
+      <div class="container">
+        <h2 class="text-center">
+          What Students <span class="d-block">Think & Say About Us</span>
+        </h2>
+        <div class="splide splide-testimonials d-flex justify-content-center">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="testimonial-box">
+                  <div
+                    class="testimonial-heading d-flex justify-content-between align-items-center"
+                  >
+                    <div class="person-photo">
+                      <img src="img/person1.jpg" alt="" />
+                    </div>
+                    <div class="person-info">
+                      <div class="person-name">Ella Musk</div>
+                      <div class="person-job">Project Management</div>
+                    </div>
+                    <div class="quote-icon">
+                      <img src="img/quote.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="testimonial-text">
+                    <p>
+                      In publishing and graphic design, Lorem ipsum is a
+                      placeholder text commonly used to demonstrate the visual
+                      form of a or a docs face.
+                    </p>
+                  </div>
+                  <div class="testimonial-rating">
+                    <img src="img/rating.svg" alt="" />
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="testimonial-box">
+                  <div
+                    class="testimonial-heading d-flex justify-content-between align-items-center"
+                  >
+                    <div class="person-photo">
+                      <img src="img/person2.jpg" alt="" />
+                    </div>
+                    <div class="person-info">
+                      <div class="person-name">Ella Musk</div>
+                      <div class="person-job">Project Management</div>
+                    </div>
+                    <div class="quote-icon">
+                      <img src="img/quote.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="testimonial-text">
+                    <p>
+                      In publishing and graphic design, Lorem ipsum is a
+                      placeholder text commonly used to demonstrate the visual
+                      form of a or a docs face.
+                    </p>
+                  </div>
+                  <div class="testimonial-rating">
+                    <img src="img/rating.svg" alt="" />
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="testimonial-box">
+                  <div
+                    class="testimonial-heading d-flex justify-content-between align-items-center"
+                  >
+                    <div class="person-photo">
+                      <img src="img/person3.jpg" alt="" />
+                    </div>
+                    <div class="person-info">
+                      <div class="person-name">Ella Musk</div>
+                      <div class="person-job">Project Management</div>
+                    </div>
+                    <div class="quote-icon">
+                      <img src="img/quote.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="testimonial-text">
+                    <p>
+                      In publishing and graphic design, Lorem ipsum is a
+                      placeholder text commonly used to demonstrate the visual
+                      form of a or a docs face.
+                    </p>
+                  </div>
+                  <div class="testimonial-rating">
+                    <img src="img/rating.svg" alt="" />
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="testimonial-box">
+                  <div
+                    class="testimonial-heading d-flex justify-content-between align-items-center"
+                  >
+                    <div class="person-photo">
+                      <img src="img/person4.jpg" alt="" />
+                    </div>
+                    <div class="person-info">
+                      <div class="person-name">Ella Musk</div>
+                      <div class="person-job">Project Management</div>
+                    </div>
+                    <div class="quote-icon">
+                      <img src="img/quote.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="testimonial-text">
+                    <p>
+                      In publishing and graphic design, Lorem ipsum is a
+                      placeholder text commonly used to demonstrate the visual
+                      form of a or a docs face.
+                    </p>
+                  </div>
+                  <div class="testimonial-rating">
+                    <img src="img/rating.svg" alt="" />
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="testimonial-box">
+                  <div
+                    class="testimonial-heading d-flex justify-content-between align-items-center"
+                  >
+                    <div class="person-photo">
+                      <img src="img/person4.jpg" alt="" />
+                    </div>
+                    <div class="person-info">
+                      <div class="person-name">Ella Musk</div>
+                      <div class="person-job">Project Management</div>
+                    </div>
+                    <div class="quote-icon">
+                      <img src="img/quote.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="testimonial-text">
+                    <p>
+                      In publishing and graphic design, Lorem ipsum is a
+                      placeholder text commonly used to demonstrate the visual
+                      form of a or a docs face.
+                    </p>
+                  </div>
+                  <div class="testimonial-rating">
+                    <img src="img/rating.svg" alt="" />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscribe Now -->
+
+    <section class="subscribe-section">
+      <div class="container">
+        <div class="subscribe-block d-flex align-items-center">
+          <div class="subscribe-text">
+            <h2>
+              Subscribe Our Newsletter
+              <span class="d-block">For Latest Updates</span>
+            </h2>
+          </div>
+          <div class="subscribe-input d-flex justify-content-center">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter Your E-mail"
+              name="email"
+            />
+            <button type="submit" class="btn">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+
+    <footer>
+      <div class="container">
+        <div class="top-footer d-flex justify-content-between flex-wrap">
+          <div class="footer-logo d-flex align-items-center">
+            <a href="index.html"><img src="img/logo2.svg" alt="" /></a>
+          </div>
+          <div class="footer-links-box">
+            <div class="footer-links-heading"><h6>Contact Us</h6></div>
+            <div class="footer-links-list">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.google.com/maps/place/%D0%98%D0%BD%D1%84%D0%BE%D0%90%D0%A0%D0%A1/@44.7645897,17.1958145,15z/data=!4m5!3m4!1s0x0:0xb2f98f1b6d04a4d5!8m2!3d44.7645897!4d17.1958145"
+                    target="_blank"
+                    >Carice Milice 43</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+38751464626">051/464-626</a>
+                </li>
+                <li>
+                  <a href="mailto:academy@infoars.net">academy@infoars.net</a>
+                </li>
+                <li>
+                  <div class="footer-social-links d-flex">
+                    <a href="https://www.facebook.com/InfoARS" target="_blank"
+                      ><img src="img/facebook-f.svg" alt=""
+                    /></a>
+                    <a href="https://twitter.com/infoars" target="_blank"
+                      ><img src="img/twitter.svg" alt=""
+                    /></a>
+                    <a
+                      href="https://www.linkedin.com/in/infoars-banjaluka-bba36b2b"
+                      target="_blank"
+                      ><img src="img/linkedin-in.svg" alt=""
+                    /></a>
+                    <a href="https://www.instagram.com/infoars/" target="_blank"
+                      ><img src="img/instagram.svg" alt=""
+                    /></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-links-box">
+            <div class="footer-links-heading"><h6>Category</h6></div>
+            <div class="footer-links-list">
+              <ul>
+                <li>
+                  <a href="">Accounting</a>
+                </li>
+                <li>
+                  <a href="">Web Design</a>
+                </li>
+                <li>
+                  <a href="">Development</a>
+                </li>
+                <li>
+                  <a href="">Photography</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-links-box">
+            <div class="footer-links-heading"><h6>Company</h6></div>
+            <div class="footer-links-list">
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="about-us.html">About Us</a>
+                </li>
+                <li>
+                  <a href="courses.html">Courses</a>
+                </li>
+                <li>
+                  <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                  <a href="contact-us.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-links-box">
+            <div class="footer-links-heading"><h6>Quick Links</h6></div>
+            <div class="footer-links-list">
+              <ul>
+                <li>
+                  <a href="">FAQ</a>
+                </li>
+                <li>
+                  <a href=""> Customer Support</a>
+                </li>
+                <li>
+                  <a href="">Terms and Conditions</a>
+                </li>
+                <li>
+                  <a href="">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-footer">
+          <p>© 2021 INFORMATICKA AKADEMIJA | All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <link rel="stylesheet" href="scripts/splide/splide.min.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="scripts/splide/splide.min.js"></script>
+    <script src="scripts/main.js?v=1"></script>
+  </body>
+</html>
