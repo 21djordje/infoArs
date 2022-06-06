@@ -1352,6 +1352,10 @@ footer {
   h2 {
     font-size: 30px;
   }
+  .subscribe-text,
+  .subscribe-input {
+    flex: unset;
+  }
 }
 
 @media (max-width: 420px) {
