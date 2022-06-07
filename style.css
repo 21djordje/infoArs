@@ -2,6 +2,7 @@
   --font: "Roboto", sans-serif;
   --custom-black: #232323;
   --red: #d54757;
+  --green: #2ecc71;
 }
 
 html,
@@ -43,17 +44,17 @@ a:hover {
 }
 
 .btn-main {
-  background-color: #d54757;
+  background-color: var(--green);
   color: #ffffff;
-  border: 1px solid var(--red);
+  border: 1px solid var(--green);
 }
 
 .btn-main:hover,
 .btn-main:active,
 .btn-main:focus {
   background-color: #ffffff;
-  color: var(--red);
-  border-color: var(--red);
+  color: var(--green);
+  border-color: var(--green);
 }
 
 h2 {
@@ -414,8 +415,8 @@ h2 {
 
 .top-categories-section {
   background-color: #ffffff;
-  padding-top: 82px;
-  padding-bottom: 92px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .categories-block {
@@ -460,7 +461,7 @@ h2 {
 
 .category-box h5 {
   font-weight: 700;
-  font-size: 23.63px;
+  font-size: 20px;
   letter-spacing: 0.84px;
   line-height: 1.05;
   margin-bottom: 4px;
@@ -468,7 +469,7 @@ h2 {
 
 .category-box h6 {
   font-weight: 400;
-  font-size: 21.4267px;
+  font-size: 18px;
   line-height: 1.17;
   margin-bottom: 0px;
 }
@@ -483,8 +484,8 @@ h2 {
 
 .most-featured-section {
   background: #f5f5f5;
-  padding-top: 90px;
-  padding-bottom: 140px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .most-featured-section .heading-wrap h2 span {
@@ -572,7 +573,7 @@ a.course-link {
 
 .course-card .course-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
   max-height: 223px;
   object-fit: cover;
   border-radius: 10px;
@@ -637,10 +638,11 @@ a.course-link {
   margin-right: 10px;
 }
 
-.course-price {
+.card-bottom {
   display: flex;
   flex-grow: 1;
   align-items: flex-end;
+  justify-content: space-between;
 }
 
 .course-price h6 {
@@ -656,13 +658,14 @@ a.course-link {
   border-radius: 4px;
 }
 
+.card-bottom .btn {
+  padding: 10px 35px;
+  line-height: 1.246;
+}
+
 /********************************************
           Stats Section
 ********************************************/
-.stats-section {
-  padding-top: 110px;
-  padding-bottom: 110px;
-}
 
 .stats-bg {
   background-color: var(--red);
@@ -710,8 +713,8 @@ a.course-link {
 
 .popular-courses-section {
   background: #f5f5f5;
-  padding-top: 90px;
-  padding-bottom: 55px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .popular-courses-section .tab-content {
@@ -768,8 +771,8 @@ a.course-link {
 ********************************************/
 
 .blog-section {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .blog-block {
@@ -876,7 +879,7 @@ a.course-link {
 ********************************************/
 
 .testimonials-section {
-  padding-top: 90px;
+  padding-top: 50px;
   padding-bottom: 245px;
   background: #f5f5f5;
 }
@@ -1156,6 +1159,12 @@ footer {
   }
   .hero-img-card-1 {
     left: 0px;
+  }
+}
+
+@media (min-width: 992.1px) and (max-width: 1199px) {
+  .card-bottom .btn {
+    padding: 10px 20px;
   }
 }
 
