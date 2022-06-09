@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JavaScript & React.js</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css?v=2" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo2.svg" alt="infoArs" />
+        </a>
+
+        <label class="navbar-toggler" for="slide-menu-right" type="button">
+          <span> </span>
+          <span> </span>
+          <span> </span>
+        </label>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <div class="navbar-nav ms-auto align-items-center">
+            <ul id="menu-main" class="navbar-nav me-auto mb-2 mb-md-0">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <div class="nav-btn">
+              <a
+                class="nav-link btn btn-main"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#signUpModal"
+                >Sign Up</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Menu Items -->
+    <div class="slide-menu">
+      <input id="slide-menu-right" class="menu-toggle" type="checkbox" />
+      <div class="menu-wrap">
+        <label for="slide-menu-right" class="menu-close">Close</label>
+        <div class="menu-list">
+          <ul id="menu-main" class="navbar-nav me-auto mb-5 text-center">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+          <div class="nav-btn text-center">
+            <a
+              class="nav-link btn btn-main"
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#signUpModal"
+              >Sign Up</a
+            >
+          </div>
+        </div>
+      </div>
+      <label for="slide-menu-right" class="menu-overlay"></label>
+    </div>
+
+    <!-- Course Hero -->
+
+    <section
+      class="course-hero d-flex align-items-center justify-content-center"
+    >
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-left">
+              <h1>JavaScript & React.js</h1>
+              <div class="short-describe">
+                <p>
+                  The most impressive is collection of share me online college
+                  courses.The most impressive is collection of share me online
+                  college courses.
+                </p>
+              </div>
+              <div class="rating-wrap d-flex align-items-center">
+                <div class="rating-img">
+                  <img src="img/rating.svg" alt="" />
+                </div>
+                <div class="rating-number">(958)</div>
+              </div>
+              <div class="instructor-wrap d-flex align-items-center">
+                <div class="instructor-photo">
+                  <img src="img/person3.jpg" alt="" />
+                </div>
+                <div class="instructor-info">
+                  <div class="instructor-name">Ella Enderson</div>
+                  <div class="instructor-job">Senior Google Engineer</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-none d-lg-block">
+            <div class="hero-right">
+              <div class="hero-img-wrap">
+                <img src="img/laptop2.png" alt="" />
+                <div class="hero-logo-1">
+                  <img src="img/js.svg" alt="" />
+                </div>
+                <div class="hero-logo-2">
+                  <img src="img/react.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="countdown-section">
+      <div class="container">
+        <div class="tick mx-auto" data-did-init="handleTickInit">
+          <div
+            data-repeat="true"
+            data-layout="horizontal fit"
+            data-transform="preset(d, h, m, s) -> delay"
+          >
+            <div class="tick-group">
+              <div
+                data-key="value"
+                data-repeat="true"
+                data-transform="pad(00) -> split -> delay"
+              >
+                <span data-view="flip"></span>
+              </div>
+
+              <span data-key="label" data-view="text" class="tick-label"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Course info -->
+
+    <section class="course-info-section standard-section">
+      <div class="container">
+        <div class="course-info-content">
+          <div class="video-container mx-auto">
+            <img src="img/blog-post.jpg" alt="" />
+            <a
+              href="https://www.youtube.com/watch?v=Fwzty2u91Iw"
+              class="play-btn popup-youtube"
+              ><img src="img/play.svg" alt=""
+            /></a>
+          </div>
+          <div class="course-details-block">
+            <div class="row">
+              <div class="col-lg-10 offset-lg-1">
+                <div
+                  class="course-details-table d-flex flex-wrap justify-content-between"
+                >
+                  <div class="course-details d-flex align-items-center">
+                    <div class="detail-icon">
+                      <img src="img/instructor.svg" alt="" />
+                    </div>
+                    <div class="detail-name">Instructor</div>
+                    <div class="detail-value">Katrina Paul</div>
+                  </div>
+                  <div class="course-details d-flex align-items-center">
+                    <div class="detail-icon">
+                      <img src="img/clock.svg" alt="" />
+                    </div>
+                    <div class="detail-name">Hours</div>
+                    <div class="detail-value">36h</div>
+                  </div>
+                  <div class="course-details d-flex align-items-center">
+                    <div class="detail-icon">
+                      <img src="img/calendar.svg" alt="" />
+                    </div>
+                    <div class="detail-name">Starts From</div>
+                    <div class="detail-value">2022-06-22</div>
+                  </div>
+                  <div class="course-details d-flex align-items-center">
+                    <div class="detail-icon">
+                      <img src="img/calendar.svg" alt="" />
+                    </div>
+                    <div class="detail-name">Months</div>
+                    <div class="detail-value">08 hr 15 mins</div>
+                  </div>
+                  <div class="course-details d-flex align-items-center">
+                    <div class="detail-icon">
+                      <img src="img/lvl.svg" alt="" />
+                    </div>
+                    <div class="detail-name">Level</div>
+                    <div class="detail-value">Beginner</div>
+                  </div>
+                  <div class="course-details d-flex align-items-center">
+                    <div class="detail-icon">
+                      <img src="img/sert.svg" alt="" />
+                    </div>
+                    <div class="detail-name">Certificate</div>
+                    <div class="detail-value">Yes</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Course -->
+
+    <div class="about-course-section standard-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="about-box">
+              <h2>About This Course</h2>
+              <p>
+                It is a long established fact that a reader will be distracted
+                the readable content of a page when looking at its layout. point
+                of using Lorem Ipsum is that it has a more-or-less normal
+                distribution of letters, as opposed to using 'Content here,
+                content here', making it any web sites still in their infancy.It
+                is a long be distracted by the readable.
+              </p>
+            </div>
+            <div class="about-box">
+              <h2>Who Is This Course For?</h2>
+              <p>
+                It is a long established fact that a reader will be distracted
+                the readable content of a page when looking at its layout. point
+                of using Lorem Ipsum is that it has a more-or-less normal
+                distribution of letters, as opposed to using 'Content here,
+                content here', making it any web sites still in their infancy.It
+                is a long be distracted by the readable.
+              </p>
+            </div>
+            <div class="about-box">
+              <h2>Work plan</h2>
+              <div class="accordion standard-accordion" id="accordionStandard">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      JavaScript basics
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionStandard"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>Module Introduction</li>
+                        <li>Understanding "let" and "const"</li>
+                        <li>Exports and Imports</li>
+                        <li>Classes, Properties and Methods</li>
+                        <li>The Spread & Rest Operator</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Functions
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionStandard"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>Module Introduction</li>
+                        <li>Understanding "let" and "const"</li>
+                        <li>Exports and Imports</li>
+                        <li>Classes, Properties and Methods</li>
+                        <li>The Spread & Rest Operator</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      ES6 modern Javascript syntax
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionStandard"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>Module Introduction</li>
+                        <li>Understanding "let" and "const"</li>
+                        <li>Exports and Imports</li>
+                        <li>Classes, Properties and Methods</li>
+                        <li>The Spread & Rest Operator</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      Asynchronous Javascript
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingFour"
+                    data-bs-parent="#accordionStandard"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>Module Introduction</li>
+                        <li>Understanding "let" and "const"</li>
+                        <li>Exports and Imports</li>
+                        <li>Classes, Properties and Methods</li>
+                        <li>The Spread & Rest Operator</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive"
+                      aria-expanded="false"
+                      aria-controls="collapseFive"
+                    >
+                      HTTP requests and working with APIs
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFive"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingFive"
+                    data-bs-parent="#accordionStandard"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>Module Introduction</li>
+                        <li>Understanding "let" and "const"</li>
+                        <li>Exports and Imports</li>
+                        <li>Classes, Properties and Methods</li>
+                        <li>The Spread & Rest Operator</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="enroll-box mx-auto">
+              <div class="enroll-header d-flex justify-content-between">
+                <div class="enroll-price">$ 2,230</div>
+                <div class="enroll-rating-wrapper text-center">
+                  <div class="enroll-rating">
+                    4.9 <span><img src="img/rating-white.svg" alt="" /></span>
+                  </div>
+                  <div class="enroll-votes">(22,000)</div>
+                </div>
+              </div>
+              <div class="enroll-form">
+                <form>
+                  <div class="enroll-form-group">
+                    <label for="nameInput" class="form-label"
+                      >Name or Username</label
+                    >
+                    <input type="text" class="form-control" id="nameInput" />
+                  </div>
+                  <div class="enroll-form-group">
+                    <label for="emailInput" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="emailInput" />
+                  </div>
+                  <div class="enroll-form-group">
+                    <label for="phoneInput" class="form-label"
+                      >Phone Number</label
+                    >
+                    <input type="text" class="form-control" id="phoneInput" />
+                  </div>
+                  <div class="enroll-form-group">
+                    <label for="promoInput" class="form-label"
+                      >Promo Code</label
+                    >
+                    <input type="text" class="form-control" id="promoInput" />
+                  </div>
+                  <button type="submit" class="btn btn-main">Enroll Now</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- What you will learn-->
+
+    <section class="learn-section standard-section">
+      <div class="container">
+        <h2>What You’ll Learn In This Course</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="standard-list-box">
+              <ul>
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="list-style-img">
+                      <img src="img/red-check.svg" alt="" />
+                    </div>
+                    <div class="list-text">
+                      In the course you will learn to use JavaScript.
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="list-style-img">
+                      <img src="img/red-check.svg" alt="" />
+                    </div>
+                    <div class="list-text">
+                      You will know how to implement innovations in
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="list-style-img">
+                      <img src="img/red-check.svg" alt="" />
+                    </div>
+                    <div class="list-text">
+                      You will have the ability to quickly spot and fix
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="list-style-img">
+                      <img src="img/red-check.svg" alt="" />
+                    </div>
+                    <div class="list-text">
+                      In the course you will learn to use JavaScript.
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="list-style-img">
+                      <img src="img/red-check.svg" alt="" />
+                    </div>
+                    <div class="list-text">
+                      In the course you will learn to use JavaScript.
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="standard-list-box">
+              <ul>
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="list-style-img">
+                      <img src="img/red-check.svg" alt="" />
+                    </div>
+                    <div class="list-text">
+                      In the course you will learn to use JavaScript.
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="list-style-img">
+                      <img src="img/red-check.svg" alt="" />
+                    </div>
+                    <div class="list-text">
+                      You will know how to implement innovations in
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="list-style-img">
+                      <img src="img/red-check.svg" alt="" />
+                    </div>
+                    <div class="list-text">
+                      You will have the ability to quickly spot and fix
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="list-style-img">
+                      <img src="img/red-check.svg" alt="" />
+                    </div>
+                    <div class="list-text">
+                      In the course you will learn to use JavaScript.
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="list-style-img">
+                      <img src="img/red-check.svg" alt="" />
+                    </div>
+                    <div class="list-text">
+                      In the course you will learn to use JavaScript.
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What involve-->
+
+    <section class="involve-section standard-section">
+      <div class="container">
+        <h2>What the course involves?</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="standard-list-box">
+              <ul>
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="list-style-img">
+                      <img src="img/red-check.svg" alt="" />
+                    </div>
+                    <div class="list-text">6 Months, 120 Hours</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="list-style-img">
+                      <img src="img/red-check.svg" alt="" />
+                    </div>
+                    <div class="list-text">30 Projects</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="list-style-img">
+                      <img src="img/red-check.svg" alt="" />
+                    </div>
+                    <div class="list-text">
+                      Small Group (from 6 to 8 participants)
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="list-style-img">
+                      <img src="img/red-check.svg" alt="" />
+                    </div>
+                    <div class="list-text">Free Consultations</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="standard-list-box">
+              <ul>
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="list-style-img">
+                      <img src="img/red-check.svg" alt="" />
+                    </div>
+                    <div class="list-text">Technical Support (e-mail)</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="list-style-img">
+                      <img src="img/red-check.svg" alt="" />
+                    </div>
+                    <div class="list-text">Technical Support (e-mail)</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="list-style-img">
+                      <img src="img/red-check.svg" alt="" />
+                    </div>
+                    <div class="list-text">Certificate</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center">
+                    <div class="list-style-img">
+                      <img src="img/red-check.svg" alt="" />
+                    </div>
+                    <div class="list-text">FreeHosting and domain</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instructor section -->
+
+    <section class="instructor-section standard-section">
+      <div class="container">
+        <h2>Your Instructor</h2>
+        <div class="instructor-box d-flex flex-column flex-lg-row">
+          <div class="instructor-img me-lg-5">
+            <img src="img/person3.jpg" alt="" />
+          </div>
+          <div class="instructor-infos">
+            <div class="instructor-name">Elan Paul</div>
+            <div class="instructor-level">Top Instructor</div>
+            <div class="instructor-bio">
+              <p>
+                It is a long established fact that a reader will be distracted
+                the readable content of a page when looking at its layout. point
+                of using Lorem Ipsum is that it has a more-or-less normal
+                distribution of letters, as opposed to using 'Content here,
+                content here', making it look like readable English. Many
+                desktop publishing packages and web page editors now use Lorem
+                Ipsum as their default model text, and a search for 'lorem
+                ipsum' will uncover many web sites still in their infancy.It is
+                a long established fact that a reader will be distracted by the
+                readable.
+              </p>
+            </div>
+            <div class="instructor-stats-box d-flex align-items-center">
+              <div class="instructor-stat d-flex align-items-center">
+                <div class="stat-icon me-3">
+                  <img src="img/cour.svg" alt="" />
+                </div>
+                <div class="stat">120 Courses</div>
+              </div>
+              <div class="instructor-stat d-flex align-items-center">
+                <div class="stat-icon me-3">
+                  <img src="img/reviews.svg" alt="" />
+                </div>
+                <div class="stat">59 Reviews</div>
+              </div>
+              <div class="instructor-stat d-flex align-items-center">
+                <div class="stat-icon me-3">
+                  <img src="img/students.svg" alt="" />
+                </div>
+                <div class="stat">44 Students</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stories Section-->
+
+    <section class="stories-section standard-section">
+      <div class="container">
+        <h2 class="text-center">Our Success Stories</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="story-card">
+              <div class="story-header">
+                <img src="img/blog-post.jpg" alt="" />
+                <a
+                  href="https://www.youtube.com/watch?v=Fwzty2u91Iw"
+                  class="play-btn popup-youtube"
+                  ><img src="img/play.svg" alt=""
+                /></a>
+              </div>
+              <div class="story-body">
+                <div class="story-name">Ella Smith</div>
+                <div class="story-text">
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted the read content of a page when looking at
+                    layout. point of using.It is a long established fact that a
+                    reader will be distracted....
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="story-card">
+              <div class="story-header">
+                <img src="img/blog-post.jpg" alt="" />
+                <a
+                  href="https://www.youtube.com/watch?v=Fwzty2u91Iw"
+                  class="play-btn popup-youtube"
+                  ><img src="img/play.svg" alt=""
+                /></a>
+              </div>
+              <div class="story-body">
+                <div class="story-name">Ella Smith</div>
+                <div class="story-text">
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted the read content of a page when looking at
+                    layout. point of using.It is a long established fact that a
+                    reader will be distracted....
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="story-card">
+              <div class="story-header">
+                <img src="img/blog-post.jpg" alt="" />
+                <a
+                  href="https://www.youtube.com/watch?v=Fwzty2u91Iw"
+                  class="play-btn popup-youtube"
+                  ><img src="img/play.svg" alt=""
+                /></a>
+              </div>
+              <div class="story-body">
+                <div class="story-name">Ella Smith</div>
+                <div class="story-text">
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted the read content of a page when looking at
+                    layout. point of using.It is a long established fact that a
+                    reader will be distracted....
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+
+    <section class="standard-section pricing-section">
+      <div class="container">
+        <h2 class="text-center">Pricing Plan</h2>
+        <div class="pricing-block d-flex justify-content-center">
+          <div class="pricing-card mx-lg-3">
+            <div class="pricing-header text-center">
+              <div class="plan-name">Student</div>
+              <div class="plan-price">$49</div>
+            </div>
+            <div class="pricing-card-body">
+              <div class="pricing-list">
+                <ul>
+                  <li>
+                    <div class="d-flex align-items-center">
+                      <div class="price-list-style">
+                        <img src="img/greencheck.svg" alt="" />
+                      </div>
+                      <div class="pricing-list-text">
+                        In publishing and graphic design.
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex align-items-center">
+                      <div class="price-list-style">
+                        <img src="img/greencheck.svg" alt="" />
+                      </div>
+                      <div class="pricing-list-text">
+                        In publishing and graphic design.
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex align-items-center">
+                      <div class="price-list-style">
+                        <img src="img/greencheck.svg" alt="" />
+                      </div>
+                      <div class="pricing-list-text">
+                        In publishing and graphic design.
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex align-items-center">
+                      <div class="price-list-style">
+                        <img src="img/greencheck.svg" alt="" />
+                      </div>
+                      <div class="pricing-list-text">
+                        In publishing and graphic design.
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <a href="" class="btn btn-main w-100">Choose Plan</a>
+            </div>
+          </div>
+          <div class="pricing-card top-offer mx-lg-3">
+            <div class="pricing-header text-center">
+              <div class="plan-name">Early Bird</div>
+              <div class="plan-price">$95</div>
+            </div>
+            <div class="pricing-card-body">
+              <div class="pricing-list">
+                <ul>
+                  <li>
+                    <div class="d-flex align-items-center">
+                      <div class="price-list-style">
+                        <img src="img/whitecheck.svg" alt="" />
+                      </div>
+                      <div class="pricing-list-text">
+                        In publishing and graphic design.
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex align-items-center">
+                      <div class="price-list-style">
+                        <img src="img/whitecheck.svg" alt="" />
+                      </div>
+                      <div class="pricing-list-text">
+                        In publishing and graphic design.
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex align-items-center">
+                      <div class="price-list-style">
+                        <img src="img/whitecheck.svg" alt="" />
+                      </div>
+                      <div class="pricing-list-text">
+                        In publishing and graphic design.
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex align-items-center">
+                      <div class="price-list-style">
+                        <img src="img/whitecheck.svg" alt="" />
+                      </div>
+                      <div class="pricing-list-text">
+                        In publishing and graphic design.
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <a href="" class="btn btn-white w-100">Choose Plan</a>
+            </div>
+          </div>
+          <div class="pricing-card mx-lg-3">
+            <div class="pricing-header text-center">
+              <div class="plan-name">Regular</div>
+              <div class="plan-price">$100</div>
+            </div>
+            <div class="pricing-card-body">
+              <div class="pricing-list">
+                <ul>
+                  <li>
+                    <div class="d-flex align-items-center">
+                      <div class="price-list-style">
+                        <img src="img/greencheck.svg" alt="" />
+                      </div>
+                      <div class="pricing-list-text">
+                        In publishing and graphic design.
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex align-items-center">
+                      <div class="price-list-style">
+                        <img src="img/greencheck.svg" alt="" />
+                      </div>
+                      <div class="pricing-list-text">
+                        In publishing and graphic design.
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex align-items-center">
+                      <div class="price-list-style">
+                        <img src="img/greencheck.svg" alt="" />
+                      </div>
+                      <div class="pricing-list-text">
+                        In publishing and graphic design.
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex align-items-center">
+                      <div class="price-list-style">
+                        <img src="img/greencheck.svg" alt="" />
+                      </div>
+                      <div class="pricing-list-text">
+                        In publishing and graphic design.
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <a href="" class="btn btn-main w-100">Choose Plan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Similar Courses -->
+
+    <section class="similar-section standard-section">
+      <div class="container">
+        <h2 class="text-center">Similar Courses</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <a href="" class="course-link">
+              <div class="course-card">
+                <div class="course-image">
+                  <img src="img/laptop.jpg" alt="" />
+                </div>
+                <div
+                  class="category-stars d-flex justify-content-between align-item"
+                >
+                  <div class="card-category">Business</div>
+                  <div class="card-review d-flex align-items-center">
+                    <div class="card-mark">4.9</div>
+                    <div class="card-stars">
+                      <img src="img/rating.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <h5>
+                  Culture & Leadership: Strategies for a successful business.
+                </h5>
+                <div class="duration-lectures d-flex justify-content-between">
+                  <div class="course-duration d-flex align-items-center">
+                    <div class="icon-wrapper">
+                      <img src="img/clock.svg" alt="" />
+                    </div>
+                    <div class="course-duration-text">08 hr 15 min</div>
+                  </div>
+                  <div class="course-lectures d-flex align-items-center">
+                    <div class="icon-wrapper">
+                      <img src="img/lectures.svg" alt="" />
+                    </div>
+                    <div class="course-duration-text">29 Lectures</div>
+                  </div>
+                </div>
+                <div class="card-bottom">
+                  <div class="course-price"><h6>$33.00</h6></div>
+                  <div class="btn btn-main">Vidi više</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <a href="" class="course-link">
+              <div class="course-card">
+                <div class="course-image">
+                  <img src="img/laptop.jpg" alt="" />
+                </div>
+                <div
+                  class="category-stars d-flex justify-content-between align-item"
+                >
+                  <div class="card-category">Business</div>
+                  <div class="card-review d-flex align-items-center">
+                    <div class="card-mark">4.9</div>
+                    <div class="card-stars">
+                      <img src="img/rating.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <h5>
+                  Culture & Leadership: Strategies for a successful business.
+                </h5>
+                <div class="duration-lectures d-flex justify-content-between">
+                  <div class="course-duration d-flex align-items-center">
+                    <div class="icon-wrapper">
+                      <img src="img/clock.svg" alt="" />
+                    </div>
+                    <div class="course-duration-text">08 hr 15 min</div>
+                  </div>
+                  <div class="course-lectures d-flex align-items-center">
+                    <div class="icon-wrapper">
+                      <img src="img/lectures.svg" alt="" />
+                    </div>
+                    <div class="course-duration-text">29 Lectures</div>
+                  </div>
+                </div>
+                <div class="card-bottom">
+                  <div class="course-price"><h6>$33.00</h6></div>
+                  <div class="btn btn-main">Vidi više</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <a href="" class="course-link">
+              <div class="course-card">
+                <div class="course-image">
+                  <img src="img/laptop.jpg" alt="" />
+                </div>
+                <div
+                  class="category-stars d-flex justify-content-between align-item"
+                >
+                  <div class="card-category">Business</div>
+                  <div class="card-review d-flex align-items-center">
+                    <div class="card-mark">4.9</div>
+                    <div class="card-stars">
+                      <img src="img/rating.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <h5>
+                  Culture & Leadership: Strategies for a successful business.
+                </h5>
+                <div class="duration-lectures d-flex justify-content-between">
+                  <div class="course-duration d-flex align-items-center">
+                    <div class="icon-wrapper">
+                      <img src="img/clock.svg" alt="" />
+                    </div>
+                    <div class="course-duration-text">08 hr 15 min</div>
+                  </div>
+                  <div class="course-lectures d-flex align-items-center">
+                    <div class="icon-wrapper">
+                      <img src="img/lectures.svg" alt="" />
+                    </div>
+                    <div class="course-duration-text">29 Lectures</div>
+                  </div>
+                </div>
+                <div class="card-bottom">
+                  <div class="course-price"><h6>$33.00</h6></div>
+                  <div class="btn btn-main">Vidi više</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+
+    <footer>
+      <div class="container">
+        <div class="top-footer d-flex justify-content-between flex-wrap">
+          <div class="footer-logo d-flex align-items-center">
+            <a href="index.html"><img src="img/logo2.svg" alt="" /></a>
+          </div>
+          <div class="footer-links-box">
+            <div class="footer-links-heading"><h6>Contact Us</h6></div>
+            <div class="footer-links-list">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.google.com/maps/place/%D0%98%D0%BD%D1%84%D0%BE%D0%90%D0%A0%D0%A1/@44.7645897,17.1958145,15z/data=!4m5!3m4!1s0x0:0xb2f98f1b6d04a4d5!8m2!3d44.7645897!4d17.1958145"
+                    target="_blank"
+                    >Carice Milice 43</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+38751464626">051/464-626</a>
+                </li>
+                <li>
+                  <a href="mailto:academy@infoars.net">academy@infoars.net</a>
+                </li>
+                <li>
+                  <div class="footer-social-links d-flex">
+                    <a href="https://www.facebook.com/InfoARS" target="_blank"
+                      ><img src="img/facebook-f.svg" alt=""
+                    /></a>
+                    <a href="https://twitter.com/infoars" target="_blank"
+                      ><img src="img/twitter.svg" alt=""
+                    /></a>
+                    <a
+                      href="https://www.linkedin.com/in/infoars-banjaluka-bba36b2b"
+                      target="_blank"
+                      ><img src="img/linkedin-in.svg" alt=""
+                    /></a>
+                    <a href="https://www.instagram.com/infoars/" target="_blank"
+                      ><img src="img/instagram.svg" alt=""
+                    /></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-links-box">
+            <div class="footer-links-heading"><h6>Category</h6></div>
+            <div class="footer-links-list">
+              <ul>
+                <li>
+                  <a href="">Accounting</a>
+                </li>
+                <li>
+                  <a href="">Web Design</a>
+                </li>
+                <li>
+                  <a href="">Development</a>
+                </li>
+                <li>
+                  <a href="">Photography</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-links-box">
+            <div class="footer-links-heading"><h6>Company</h6></div>
+            <div class="footer-links-list">
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="about-us.html">About Us</a>
+                </li>
+                <li>
+                  <a href="courses.html">Courses</a>
+                </li>
+                <li>
+                  <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                  <a href="contact-us.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-links-box">
+            <div class="footer-links-heading"><h6>Quick Links</h6></div>
+            <div class="footer-links-list">
+              <ul>
+                <li>
+                  <a href="">FAQ</a>
+                </li>
+                <li>
+                  <a href=""> Customer Support</a>
+                </li>
+                <li>
+                  <a href="">Terms and Conditions</a>
+                </li>
+                <li>
+                  <a href="">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-footer">
+          <p>© 2021 INFORMATICKA AKADEMIJA | All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <link rel="stylesheet" href="scripts/flip/flip.min.css" />
+    <link rel="stylesheet" href="scripts/magnific/magnific-popup.css" />
+    <link rel="stylesheet" href="scripts/splide/splide.min.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/flip/flip.min.js"></script>
+    <script src="scripts/magnific/jquery.magnific-popup.min.js"></script>
+    <script src="scripts/splide/splide.min.js"></script>
+    <script src="scripts/main.js?v=1"></script>
+  </body>
+</html>
